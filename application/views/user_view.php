@@ -9,11 +9,13 @@
 <body>
     <h1>
 
-<?php
+<?php 
+
+// echo $results;
 
 foreach ($results as $object){
     echo $object->username."<br>";
-}
+} 
 
 
 
