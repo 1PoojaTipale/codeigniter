@@ -25,7 +25,7 @@
           <a class="nav-link active" aria-current="page" href="<?php echo base_url();?>">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="<?php echo base_url();?>/users/register">Register</a>
+          <a class="nav-link active" aria-current="page" href="<?php echo base_url();?>users/register">Register</a>
         </li>
         <li class="nav-item ">
           <a class="nav-link" href="#">Link</a>
@@ -68,7 +68,7 @@
     <div class="col-lg-4">
     
     
-    <?php $this->load->view($main_view);?>
+    <?php $this->load->view($main);?>
     </div>
     </div>
 </body>
