@@ -1,8 +1,14 @@
+
+
+<div class="col-lg-12">
 <h1>Project name</h1>
-<div class="col-sx-3 float-right">
+</div>
+
+
+<div class="row-lg-12 p-5 mr-auto ">
 <ul class="list-group">
 
-<h3> Project Actions </h3>
+<h4> Project Actions </h4>
 
 <!-- <li class=" list-group-item"><a href="<?php echo base_url();?>/tasks/create/<?php echo $project->id;?>"> Create Task</a></li> -->
 <li class=" list-group-item"><a href=""> Edit Project</a></li>
