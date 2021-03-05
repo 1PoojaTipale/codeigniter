@@ -25,11 +25,19 @@
           <a class="nav-link active" aria-current="page" href="<?php echo base_url();?>">Home</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="<?php echo base_url();?>projects">Projects</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="<?php echo base_url();?>users/register">Register</a>
         </li>
+        <?php if($this->session->userdata('logged_in')):?>
+
         <li class="nav-item ">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="<?php echo base_url();?> users/logout">Logout</a>
+
+   
         </li>
+        <?php endif; ?>
         <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown

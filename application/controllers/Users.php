@@ -109,10 +109,12 @@ if( $user_id){
 
   $this->session->set_userdata($user_data);
   $this->session->set_flashdata('login_success','you are now logged in');
-            $data ['main']="admin_view";
-          $this->load->view('layouts/main',$data);
-$this->session->set_flashdata('user_registered', 'Users has been registered');
-  redirect('home/index');
+          // $data ['main']="admin_view";
+
+          // $this->load->view('layouts/main',$data);
+            
+          // $this->session->set_flashdata('user_registered', 'Users has been registered');
+          redirect('home/index');
 }
 else{
   $this->session->set_flashdata('login_failed',' sorry you are not logged in');
