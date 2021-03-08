@@ -5,6 +5,24 @@
 <p>Date Created:<?php echo $project_data->date_created; ?></p>
 <h3>Description</h3>
 <p><?php echo $project_data->project_body; ?></p>
+
+<h3>Tasks</h3>
+<ul>
+<?php if($completed_tasks):?>
+
+ <?php foreach($completed_tasks as $task):?>
+<li>
+<a href="<?php echo base_url();?>tasks/display/<?php echo $task->task_id;?>">
+
+  <?php echo $task->task_name;?> 
+  </a>
+  </li  >
+<?php endforeach; ?>
+<?php else: ?>
+<p>You Have Not Tasks Pending</p>
+<?php endif;?>
+
+</ul>
 </div>
 
 

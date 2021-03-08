@@ -26,7 +26,9 @@ public function get_task_project_id($task_id)
 }
 public function get_project_name($project_id)
 {
-        $this->db->where('id',$project_id);
+       
+          $this->db->where('id',$project_id);
+       
         $query=   $this->db->get('projects');
         return $query->row()->project_name;
 }
@@ -48,6 +50,12 @@ public function edit_task($task_id,$data)
 
 }
 
+
+     public function delete_task($task_id)
+        {
+        $this->db->where('id',$task_id);
+        $this->db->delete('tasks');
+        }
 
 
 

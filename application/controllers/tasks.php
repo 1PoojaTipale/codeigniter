@@ -29,7 +29,7 @@ else
 if($this->task_model->create_task($data))
 {
 $this->session->set_flashdata('task_created','Your Task has been Created');
-redirect("tasks/index"); 
+redirect("projects/index"); 
 }
 }
 }
@@ -65,7 +65,13 @@ redirect("projects/index");
 }
 }
 }
+public function delete( $project_id,$task_id)
+{
 
+    $this->task_model->delete_task($task_id);
+    $this->session->set_flashdata('task_deleted','Your Task has been deleted');
+    redirect("projects/display/".$project_id . ""); 
+}
 
 
 
