@@ -14,6 +14,11 @@
 <?php echo $this->session->flashdata('project_deleted');?>
 <?php endif;?>
 
+
+<?php if($this->session->flashdata('task_updated')):?>
+<?php echo $this->session->flashdata('task_updated');?>
+<?php endif;?>
+
 </p>
 <a class="btn btn-primary " href= "<?php echo base_url();?>projects/create">Create Project</a>
 
